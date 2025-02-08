@@ -39,6 +39,7 @@
             padding: 30px;
             border-radius: 10px;
             box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
         }
         nav {
             position: absolute;
@@ -55,6 +56,12 @@
         nav a:hover {
             text-decoration: underline;
         }
+        footer {
+            position: absolute;
+            bottom: 10px;
+            font-size: 14px;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -68,8 +75,16 @@
         <p>Experience a modern, professional, and refined interface.</p>
         <button onclick="showMessage()">Click Me</button>
         <p id="output"></p>
+        <h2>Fun Facts</h2>
+        <ul>
+            <li>The internet has over 1.8 billion websites.</li>
+            <li>HTML was first released in 1993.</li>
+            <li>The first website ever is still online at CERN.</li>
+        </ul>
     </div>
-    
+    <footer>
+        &copy; 2025 My Interactive Website. All rights reserved.
+    </footer>
     <script>
         function showMessage() {
             document.getElementById('output').innerText = "Hello! Thanks for clicking the button.";
